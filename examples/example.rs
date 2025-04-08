@@ -1,42 +1,119 @@
-use sysinfo::{System, SystemExt, ProcessExt};
+use sysinfo::{System, SystemExt, CpuExt, DiskExt, ProcessExt};
+use std::{
+    fs::{OpenOptions, create_dir_all},
+    io::Write,
+    thread,
+    time::Duration,
+};
+use chrono::Local;
+use plotters::prelude::*;
+
+// Estructura para almacenar las muestras de CPU
+struct CPUSample {
+    timestamp: String,
+    cpu_usage: f64,
+}
+
+fn generate_cpu_graph(samples: &[CPUSample]) {
+    let root_area = BitMapBackend::new("cpu_usage_graph.png", (640, 480)).into_drawing_area();
+    root_area.fill(&WHITE).unwrap();
+
+    let mut chart = ChartBuilder::on(&root_area)
+        .caption("Uso de CPU", ("sans-serif", 30))
+        .margin(10)
+        .x_label_area_size(40)
+        .y_label_area_size(40)
+        .build_cartesian_2d(0..samples.len() as u32, 0.0..100.0)
+        .unwrap();
+
+    chart
+        .configure_mesh()
+        .x_desc("Intervalos (x5s)")
+        .y_desc("CPU (%)")
+        .draw()
+        .unwrap();
+
+    chart
+        .draw_series(LineSeries::new(
+            samples
+                .iter()
+                .enumerate()
+                .map(|(i, s)| (i as u32, s.cpu_usage)),
+            &RED,
+        ))
+        .unwrap();
+
+    println!("✅ Gráfico actualizado: cpu_usage_graph.png");
+}
 
 fn main() {
-    // Crea una nueva instancia de System
     let mut sys = System::new_all();
-    sys.refresh_all();
+    let mut cpu_samples: Vec<CPUSample> = Vec::new();
 
-    // Obtén los procesos en el sistema
-    let processes = sys.processes();
+    loop {
+        sys.refresh_all();
 
-    // Itera sobre los procesos para mostrar los 5 procesos con más uso de CPU
-    let mut processes_vec: Vec<_> = processes.iter().collect();
+        let cpu_usage = sys.global_cpu_info().cpu_usage();
+        let memory_usage = sys.used_memory() as f32 * 100.0 / sys.total_memory() as f32;
+        let disk_usage = sys
+            .disks()
+            .iter()
+            .map(|d| d.total_space() - d.available_space())
+            .sum::<u64>() as f32
+            * 100.0
+            / sys.disks().iter().map(|d| d.total_space()).sum::<u64>() as f32;
 
-    // Ordena los procesos por uso de CPU (de mayor a menor)
-    processes_vec.sort_by(|a, b| b.1.cpu_usage().partial_cmp(&a.1.cpu_usage()).unwrap());
+        let timestamp = Local::now().format("%Y-%m-%d %H:%M:%S").to_string();
 
-    // Muestra los 5 primeros procesos
-    for (pid, p) in processes_vec.iter().take(5) {
-        // Obtén el valor de memoria en kilobytes
-        let memory_kb = p.memory();
+        // Top 5 procesos por uso de CPU
+        let mut processes: Vec<_> = sys.processes().values().collect();
+        processes.sort_by(|a, b| b.cpu_usage().partial_cmp(&a.cpu_usage()).unwrap_or(std::cmp::Ordering::Equal));
 
-        // Imprime el valor en kilobytes para depuración
-        println!("Memoria (KB): {}", memory_kb);
+        let top5 = processes.iter().take(5).map(|p| {
+            format!(
+                "\n{} (PID: {}) - {:.2}% | {:.2} MB", 
+                p.name(), p.pid(), p.cpu_usage(), p.memory() as f64 / 1024.0 / 1024.0
+            )
+        }).collect::<Vec<String>>().join(" | ");
 
-        // Convierte la memoria a megabytes
-        let memory_mb = memory_kb as f64 / 1024.0 / 1024.0;
-        
-        //let memory_bytes = p.memory();
-        //let memory_kb = memory_bytes / 1024;
-        //let memory_mb = memory_kb as f64 / 1024.0;
-
-
-        // Imprime los detalles del proceso
+        // Limpiar pantalla
+        print!("\x1B[2J\x1B[1;1H");
         println!(
-            "{} (PID: {}) - {:.2}% CPU | {:.2} MB RAM",
-            p.name(),
-            p.pid(),
-            p.cpu_usage(),
-            memory_mb
+            "⏰ {}\nCPU: {:.2}% | Mem: {:.2}% | Disk: {:.2}%\nTop 5 procesos: {}\n",
+            timestamp, cpu_usage, memory_usage, disk_usage, top5
         );
+
+        // Guardar CSV histórico
+        let date_str = Local::now().format("%Y-%m-%d").to_string();
+        let filename = format!("logs/metrics_{}.csv", date_str);
+        create_dir_all("logs").unwrap();
+
+        let mut file = OpenOptions::new()
+            .append(true)
+            .create(true)
+            .open(&filename)
+            .unwrap();
+
+        if file.metadata().unwrap().len() == 0 {
+            writeln!(file, "timestamp,cpu,memory,disk,top5_processes").unwrap();
+        }
+
+        writeln!(file, "{},{:.2},{:.2},{:.2},\"{}\"", timestamp, cpu_usage, memory_usage, disk_usage, top5).unwrap();
+
+        // Agregar muestra a la gráfica
+        cpu_samples.push(CPUSample {
+            timestamp: timestamp.clone(),
+            cpu_usage: cpu_usage as f64,
+        });
+
+        if cpu_samples.len() > 10 {
+            cpu_samples.remove(0); // mantener solo las últimas 10
+        }
+
+        if cpu_samples.len() == 10 {
+            generate_cpu_graph(&cpu_samples);
+        }
+
+        thread::sleep(Duration::from_secs(5));
     }
 }

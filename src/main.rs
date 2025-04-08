@@ -56,9 +56,9 @@ fn main() {
         if file.metadata().unwrap().len() == 0 {
             writeln!(file, "timestamp,cpu,memory,disk,top5_processes").unwrap(); // encabezado
         }
-
+            // Imprmir en pantalla el uso de recursos y procesos
         writeln!(file, "{},{:.2},{:.2},{:.2},\"{}\"", timestamp, cpu_usage, memory_usage, disk_usage, top5).unwrap();
 
-        thread::sleep(Duration::from_secs(5)); // Cada 10 minutos
+        thread::sleep(Duration::from_secs(5)); // Cada 5 Segundos
     }
 }
