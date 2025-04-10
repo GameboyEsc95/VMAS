@@ -1,0 +1,487 @@
+timestamp,cpu,memory,disk,top5_processes
+2025-04-09 22:31:50,54.36,79.87,95.38,"
+example.exe (PID: 13496) - 50.00% | 17.93 MB | 
+svchost.exe (PID: 9280) - 0.00% | 6.75 MB | 
+WindowsTerminal.exe (PID: 13056) - 0.00% | 82.72 MB | 
+chrome.exe (PID: 13184) - 0.00% | 55.48 MB | 
+svchost.exe (PID: 4684) - 0.00% | 8.45 MB"
+2025-04-09 22:31:55,13.12,79.75,95.38,"
+Taskmgr.exe (PID: 8424) - 5.30% | 165.43 MB | 
+Code.exe (PID: 15464) - 4.98% | 318.36 MB | 
+Code.exe (PID: 4344) - 0.93% | 151.77 MB | 
+Code.exe (PID: 12028) - 0.62% | 66.02 MB | 
+Code.exe (PID: 11504) - 0.62% | 68.36 MB"
+2025-04-09 22:32:00,13.37,78.99,95.38,"
+Code.exe (PID: 15464) - 9.66% | 307.59 MB | 
+Taskmgr.exe (PID: 8424) - 4.98% | 165.43 MB | 
+chrome.exe (PID: 16540) - 1.87% | 70.38 MB | 
+Code.exe (PID: 4344) - 1.56% | 151.78 MB | 
+chrome.exe (PID: 3632) - 0.93% | 284.29 MB"
+2025-04-09 22:32:05,10.06,78.90,95.38,"
+Taskmgr.exe (PID: 8424) - 5.25% | 165.43 MB | 
+Code.exe (PID: 15464) - 2.17% | 309.12 MB | 
+example.exe (PID: 13496) - 0.62% | 18.40 MB | 
+Code.exe (PID: 12028) - 0.31% | 66.05 MB | 
+Code.exe (PID: 4344) - 0.31% | 151.84 MB"
+2025-04-09 22:32:10,9.30,78.95,95.38,"
+Taskmgr.exe (PID: 8424) - 4.05% | 165.43 MB | 
+Code.exe (PID: 15464) - 1.55% | 309.52 MB | 
+chrome.exe (PID: 5236) - 0.62% | 71.78 MB | 
+Code.exe (PID: 4344) - 0.31% | 151.93 MB | 
+explorer.exe (PID: 11268) - 0.31% | 298.43 MB"
+2025-04-09 22:32:15,24.88,79.13,95.38,"
+Code.exe (PID: 15464) - 18.89% | 314.52 MB | 
+Code.exe (PID: 12396) - 7.74% | 167.49 MB | 
+Code.exe (PID: 12300) - 6.19% | 113.03 MB | 
+Taskmgr.exe (PID: 8424) - 5.88% | 165.43 MB | 
+Code.exe (PID: 4344) - 1.24% | 151.86 MB"
+2025-04-09 22:32:20,25.03,80.54,95.38,"
+Code.exe (PID: 15464) - 11.24% | 312.24 MB | 
+Taskmgr.exe (PID: 8424) - 5.62% | 165.43 MB | 
+Code.exe (PID: 12396) - 5.62% | 175.66 MB | 
+Code.exe (PID: 12300) - 4.06% | 113.09 MB | 
+chrome.exe (PID: 10672) - 1.56% | 316.91 MB"
+2025-04-09 22:32:25,24.94,80.41,95.38,"
+Code.exe (PID: 15464) - 16.52% | 309.38 MB | 
+Code.exe (PID: 12300) - 5.91% | 113.12 MB | 
+Code.exe (PID: 12396) - 4.05% | 175.23 MB | 
+Taskmgr.exe (PID: 8424) - 4.04% | 165.43 MB | 
+chrome.exe (PID: 16540) - 0.93% | 72.00 MB"
+2025-04-09 22:32:30,24.87,79.38,95.38,"
+Code.exe (PID: 15464) - 14.60% | 309.90 MB | 
+Code.exe (PID: 12300) - 5.30% | 113.09 MB | 
+Code.exe (PID: 12396) - 4.04% | 176.53 MB | 
+Taskmgr.exe (PID: 8424) - 3.43% | 165.43 MB | 
+Code.exe (PID: 4344) - 0.93% | 151.96 MB"
+2025-04-09 22:32:35,19.73,79.34,95.38,"
+Code.exe (PID: 15464) - 15.89% | 308.20 MB | 
+Code.exe (PID: 12300) - 4.67% | 113.18 MB | 
+Taskmgr.exe (PID: 8424) - 3.43% | 165.43 MB | 
+Code.exe (PID: 4344) - 1.56% | 151.84 MB | 
+Code.exe (PID: 12396) - 1.25% | 174.61 MB"
+2025-04-09 22:32:41,15.37,79.28,95.38,"
+Taskmgr.exe (PID: 8424) - 6.50% | 165.43 MB | 
+example.exe (PID: 13496) - 4.81% | 22.78 MB | 
+Code.exe (PID: 15464) - 3.96% | 308.24 MB | 
+Code.exe (PID: 12396) - 1.70% | 174.07 MB | 
+Code.exe (PID: 12300) - 1.13% | 113.19 MB"
+2025-04-09 22:32:46,20.78,79.33,95.38,"
+Code.exe (PID: 15464) - 9.14% | 311.47 MB | 
+Code.exe (PID: 12300) - 3.24% | 113.02 MB | 
+Taskmgr.exe (PID: 8424) - 2.95% | 165.43 MB | 
+example.exe (PID: 13496) - 2.36% | 22.84 MB | 
+Code.exe (PID: 12396) - 1.77% | 172.22 MB"
+2025-04-09 22:32:51,20.27,79.72,95.38,"
+Code.exe (PID: 15464) - 14.51% | 310.54 MB | 
+Taskmgr.exe (PID: 8424) - 4.35% | 165.43 MB | 
+Code.exe (PID: 12300) - 3.19% | 114.07 MB | 
+Code.exe (PID: 12396) - 2.03% | 178.73 MB | 
+example.exe (PID: 13496) - 1.16% | 22.80 MB"
+2025-04-09 22:32:57,13.69,79.27,95.38,"
+Taskmgr.exe (PID: 8424) - 4.17% | 165.43 MB | 
+example.exe (PID: 13496) - 2.68% | 22.80 MB | 
+Code.exe (PID: 5520) - 2.68% | 112.08 MB | 
+Code.exe (PID: 15464) - 1.79% | 311.95 MB | 
+Code.exe (PID: 12300) - 1.49% | 114.77 MB"
+2025-04-09 22:33:02,11.13,78.99,95.38,"
+Taskmgr.exe (PID: 8424) - 3.88% | 165.43 MB | 
+example.exe (PID: 13496) - 2.39% | 22.80 MB | 
+Code.exe (PID: 12300) - 1.49% | 114.24 MB | 
+Code.exe (PID: 15464) - 1.19% | 312.41 MB | 
+Code.exe (PID: 12396) - 0.60% | 155.24 MB"
+2025-04-09 22:33:07,12.55,79.10,95.38,"
+Taskmgr.exe (PID: 8424) - 6.43% | 165.43 MB | 
+example.exe (PID: 13496) - 2.92% | 22.80 MB | 
+Code.exe (PID: 5520) - 1.75% | 118.21 MB | 
+Code.exe (PID: 12300) - 1.46% | 115.01 MB | 
+Code.exe (PID: 4344) - 0.88% | 151.92 MB"
+2025-04-09 22:33:13,12.46,79.07,95.38,"
+Taskmgr.exe (PID: 8424) - 5.34% | 165.43 MB | 
+example.exe (PID: 13496) - 3.26% | 22.80 MB | 
+Code.exe (PID: 15464) - 1.78% | 315.14 MB | 
+Code.exe (PID: 5520) - 1.19% | 121.60 MB | 
+Code.exe (PID: 12396) - 0.89% | 158.64 MB"
+2025-04-09 22:33:18,14.14,79.08,95.38,"
+Code.exe (PID: 15464) - 7.74% | 307.41 MB | 
+Taskmgr.exe (PID: 8424) - 5.95% | 165.43 MB | 
+example.exe (PID: 13496) - 2.08% | 22.80 MB | 
+Code.exe (PID: 4344) - 1.19% | 151.98 MB | 
+Code.exe (PID: 12300) - 1.19% | 116.44 MB"
+2025-04-09 22:33:23,13.93,79.12,95.38,"
+Taskmgr.exe (PID: 8424) - 6.59% | 165.43 MB | 
+Code.exe (PID: 15464) - 2.10% | 307.59 MB | 
+example.exe (PID: 13496) - 1.80% | 22.80 MB | 
+Code.exe (PID: 5520) - 1.50% | 128.16 MB | 
+Code.exe (PID: 12396) - 0.90% | 161.45 MB"
+2025-04-09 22:33:28,12.50,79.09,95.38,"
+Taskmgr.exe (PID: 8424) - 4.16% | 165.43 MB | 
+Code.exe (PID: 5520) - 2.97% | 114.57 MB | 
+example.exe (PID: 13496) - 2.67% | 22.80 MB | 
+Code.exe (PID: 12300) - 1.19% | 115.83 MB | 
+Code.exe (PID: 15464) - 1.19% | 308.84 MB"
+2025-04-09 22:33:34,16.32,79.06,95.38,"
+Taskmgr.exe (PID: 8424) - 6.57% | 165.43 MB | 
+Code.exe (PID: 15464) - 3.58% | 310.95 MB | 
+example.exe (PID: 13496) - 3.28% | 22.80 MB | 
+Code.exe (PID: 12300) - 2.09% | 114.90 MB | 
+Code.exe (PID: 5520) - 1.49% | 117.52 MB"
+2025-04-09 22:33:39,14.88,79.18,95.38,"
+Code.exe (PID: 15464) - 6.86% | 310.10 MB | 
+Taskmgr.exe (PID: 8424) - 5.07% | 165.43 MB | 
+example.exe (PID: 13496) - 2.98% | 23.25 MB | 
+Code.exe (PID: 11076) - 1.79% | 74.57 MB | 
+Code.exe (PID: 12300) - 1.19% | 115.56 MB"
+2025-04-09 22:33:44,12.10,79.21,95.38,"
+Taskmgr.exe (PID: 8424) - 4.46% | 165.43 MB | 
+example.exe (PID: 13496) - 2.98% | 22.91 MB | 
+Code.exe (PID: 5520) - 1.49% | 122.88 MB | 
+Code.exe (PID: 15464) - 1.19% | 310.03 MB | 
+Code.exe (PID: 12396) - 0.89% | 164.46 MB"
+2025-04-09 22:33:49,11.23,79.26,95.38,"
+Taskmgr.exe (PID: 8424) - 5.07% | 165.43 MB | 
+Code.exe (PID: 15464) - 1.79% | 310.98 MB | 
+example.exe (PID: 13496) - 1.49% | 23.28 MB | 
+Code.exe (PID: 12300) - 1.19% | 115.54 MB | 
+Code.exe (PID: 5520) - 1.19% | 124.24 MB"
+2025-04-09 22:33:55,11.98,79.24,95.38,"
+Taskmgr.exe (PID: 8424) - 7.35% | 165.43 MB | 
+example.exe (PID: 13496) - 3.24% | 22.92 MB | 
+Code.exe (PID: 4344) - 1.47% | 152.30 MB | 
+Code.exe (PID: 15464) - 1.47% | 311.96 MB | 
+Code.exe (PID: 5520) - 1.47% | 126.73 MB"
+2025-04-09 22:34:00,13.68,79.23,95.38,"
+Taskmgr.exe (PID: 8424) - 5.68% | 165.43 MB | 
+Code.exe (PID: 12300) - 3.29% | 116.95 MB | 
+example.exe (PID: 13496) - 2.09% | 23.28 MB | 
+Code.exe (PID: 15464) - 2.09% | 313.51 MB | 
+Code.exe (PID: 5520) - 1.20% | 127.24 MB"
+2025-04-09 22:34:05,30.29,79.63,95.38,"
+Code.exe (PID: 15464) - 18.21% | 313.04 MB | 
+Code.exe (PID: 12396) - 5.97% | 197.09 MB | 
+chrome.exe (PID: 11352) - 5.37% | 145.76 MB | 
+Taskmgr.exe (PID: 8424) - 5.37% | 165.43 MB | 
+Code.exe (PID: 12300) - 5.37% | 115.95 MB"
+2025-04-09 22:34:10,30.86,79.57,95.38,"
+Code.exe (PID: 15464) - 14.43% | 318.39 MB | 
+Code.exe (PID: 12396) - 6.77% | 196.02 MB | 
+Taskmgr.exe (PID: 8424) - 5.60% | 165.43 MB | 
+Code.exe (PID: 12300) - 5.31% | 115.89 MB | 
+chrome.exe (PID: 15560) - 3.24% | 160.95 MB"
+2025-04-09 22:34:16,31.76,79.35,95.38,"
+Code.exe (PID: 15464) - 24.87% | 316.59 MB | 
+Code.exe (PID: 12300) - 7.40% | 115.93 MB | 
+Taskmgr.exe (PID: 8424) - 5.92% | 165.43 MB | 
+Code.exe (PID: 12396) - 5.03% | 179.98 MB | 
+example.exe (PID: 13496) - 3.85% | 22.93 MB"
+2025-04-09 22:34:21,20.53,79.32,95.38,"
+Code.exe (PID: 15464) - 8.90% | 317.30 MB | 
+Taskmgr.exe (PID: 8424) - 4.45% | 165.43 MB | 
+Code.exe (PID: 12396) - 2.97% | 178.18 MB | 
+Code.exe (PID: 12300) - 2.97% | 115.97 MB | 
+example.exe (PID: 13496) - 2.37% | 23.28 MB"
+2025-04-09 22:34:26,21.62,79.13,95.38,"
+Code.exe (PID: 15464) - 8.98% | 319.08 MB | 
+Code.exe (PID: 12300) - 5.68% | 115.90 MB | 
+Taskmgr.exe (PID: 8424) - 3.59% | 165.43 MB | 
+Code.exe (PID: 12396) - 2.09% | 165.15 MB | 
+example.exe (PID: 13496) - 1.20% | 22.93 MB"
+2025-04-09 22:34:31,21.08,78.65,95.38,"
+Code.exe (PID: 15464) - 8.04% | 321.95 MB | 
+Taskmgr.exe (PID: 8424) - 5.95% | 165.43 MB | 
+Code.exe (PID: 12300) - 5.06% | 115.01 MB | 
+Code.exe (PID: 12396) - 2.68% | 162.23 MB | 
+example.exe (PID: 13496) - 2.38% | 23.27 MB"
+2025-04-09 22:34:37,49.60,80.16,95.38,"
+Taskmgr.exe (PID: 8424) - 6.01% | 165.43 MB | 
+Code.exe (PID: 15464) - 6.01% | 329.04 MB | 
+Code.exe (PID: 4344) - 3.00% | 152.29 MB | 
+explorer.exe (PID: 11268) - 1.80% | 295.71 MB | 
+Code.exe (PID: 12300) - 1.80% | 113.85 MB"
+2025-04-09 22:34:42,55.24,80.25,95.34,"
+Code.exe (PID: 15464) - 19.22% | 327.27 MB | 
+Code.exe (PID: 12396) - 6.91% | 175.41 MB | 
+Code.exe (PID: 12300) - 5.71% | 113.88 MB | 
+Taskmgr.exe (PID: 8424) - 4.80% | 165.43 MB | 
+example.exe (PID: 13496) - 1.80% | 23.38 MB"
+2025-04-09 22:34:47,50.70,80.46,95.34,"
+Code.exe (PID: 15464) - 9.31% | 330.01 MB | 
+Taskmgr.exe (PID: 8424) - 6.01% | 165.41 MB | 
+Code.exe (PID: 12396) - 5.41% | 178.43 MB | 
+Code.exe (PID: 12300) - 5.41% | 113.90 MB | 
+example.exe (PID: 13496) - 2.10% | 23.01 MB"
+2025-04-09 22:34:52,40.72,80.20,95.34,"
+Code.exe (PID: 15464) - 6.53% | 331.38 MB | 
+Taskmgr.exe (PID: 8424) - 4.75% | 165.41 MB | 
+Code.exe (PID: 12300) - 3.86% | 114.00 MB | 
+Code.exe (PID: 12396) - 2.67% | 177.24 MB | 
+example.exe (PID: 13496) - 2.08% | 23.38 MB"
+2025-04-09 22:34:57,65.25,80.23,95.36,"
+Code.exe (PID: 15464) - 13.95% | 325.09 MB | 
+Taskmgr.exe (PID: 8424) - 5.64% | 165.41 MB | 
+Code.exe (PID: 12300) - 3.86% | 113.99 MB | 
+example.exe (PID: 13496) - 2.97% | 23.01 MB | 
+Code.exe (PID: 12396) - 2.67% | 168.13 MB"
+2025-04-09 22:35:03,61.52,81.07,95.36,"
+Code.exe (PID: 15464) - 16.20% | 328.55 MB | 
+Code.exe (PID: 12396) - 8.84% | 171.58 MB | 
+explorer.exe (PID: 11268) - 5.60% | 296.43 MB | 
+Taskmgr.exe (PID: 8424) - 5.01% | 165.46 MB | 
+Code.exe (PID: 12300) - 3.53% | 114.38 MB"
+2025-04-09 22:35:08,50.28,81.42,95.36,"
+Code.exe (PID: 15464) - 10.07% | 324.99 MB | 
+Taskmgr.exe (PID: 8424) - 7.22% | 165.46 MB | 
+chrome.exe (PID: 4436) - 5.18% | 70.39 MB | 
+example.exe (PID: 13496) - 3.17% | 23.01 MB | 
+chrome.exe (PID: 3632) - 2.59% | 279.57 MB"
+2025-04-09 22:35:13,48.40,81.74,95.36,"
+Taskmgr.exe (PID: 8424) - 8.33% | 165.46 MB | 
+Code.exe (PID: 15464) - 3.88% | 325.81 MB | 
+example.exe (PID: 13496) - 2.99% | 23.39 MB | 
+Code.exe (PID: 8624) - 2.09% | 114.61 MB | 
+Code.exe (PID: 12300) - 1.79% | 115.02 MB"
+2025-04-09 22:35:19,46.81,81.67,95.25,"
+Taskmgr.exe (PID: 8424) - 3.58% | 165.46 MB | 
+example.exe (PID: 13496) - 2.38% | 23.33 MB | 
+Code.exe (PID: 8624) - 1.79% | 118.56 MB | 
+Code.exe (PID: 12300) - 1.49% | 115.60 MB | 
+Code.exe (PID: 15464) - 1.49% | 326.08 MB"
+2025-04-09 22:35:24,35.56,81.74,95.25,"
+Taskmgr.exe (PID: 8424) - 5.66% | 165.46 MB | 
+Code.exe (PID: 15464) - 2.68% | 327.34 MB | 
+example.exe (PID: 13496) - 2.09% | 22.98 MB | 
+Code.exe (PID: 4344) - 1.49% | 152.35 MB | 
+Code.exe (PID: 8624) - 1.19% | 121.55 MB"
+2025-04-09 22:35:29,39.75,81.72,95.25,"
+Taskmgr.exe (PID: 8424) - 5.62% | 165.82 MB | 
+Code.exe (PID: 15464) - 3.25% | 327.90 MB | 
+Code.exe (PID: 8624) - 2.96% | 124.47 MB | 
+example.exe (PID: 13496) - 2.96% | 23.36 MB | 
+Code.exe (PID: 12300) - 2.07% | 115.65 MB"
+2025-04-09 22:35:34,38.33,81.47,95.25,"
+Taskmgr.exe (PID: 8424) - 5.93% | 165.79 MB | 
+Code.exe (PID: 12300) - 4.45% | 116.08 MB | 
+Code.exe (PID: 15464) - 2.67% | 328.80 MB | 
+example.exe (PID: 13496) - 2.08% | 22.98 MB | 
+Code.exe (PID: 12396) - 2.08% | 157.12 MB"
+2025-04-09 22:35:40,39.07,81.04,95.25,"
+Taskmgr.exe (PID: 8424) - 8.36% | 165.79 MB | 
+example.exe (PID: 13496) - 7.53% | 23.35 MB | 
+Code.exe (PID: 8624) - 4.18% | 131.04 MB | 
+Code.exe (PID: 12300) - 1.95% | 115.12 MB | 
+Code.exe (PID: 15464) - 1.67% | 329.80 MB"
+2025-04-09 22:35:46,45.02,81.21,95.25,"
+Code.exe (PID: 15464) - 15.54% | 324.68 MB | 
+Taskmgr.exe (PID: 8424) - 7.91% | 165.81 MB | 
+example.exe (PID: 13496) - 5.93% | 22.97 MB | 
+Code.exe (PID: 8624) - 5.08% | 132.28 MB | 
+Code.exe (PID: 12396) - 3.95% | 178.43 MB"
+2025-04-09 22:35:51,46.51,80.84,95.25,"
+Code.exe (PID: 8624) - 5.92% | 115.55 MB | 
+Code.exe (PID: 15464) - 5.35% | 327.52 MB | 
+Code.exe (PID: 12300) - 4.51% | 114.63 MB | 
+example.exe (PID: 13496) - 4.23% | 23.38 MB | 
+Taskmgr.exe (PID: 8424) - 3.94% | 165.81 MB"
+2025-04-09 22:38:47,36.71,85.12,95.22,"
+example.exe (PID: 8284) - 50.00% | 17.75 MB | 
+Microsoft.SharePoint.exe (PID: 3624) - 0.00% | 14.59 MB | 
+svchost.exe (PID: 1120) - 0.00% | 14.93 MB | 
+chrome.exe (PID: 11160) - 0.00% | 98.21 MB | 
+chrome.exe (PID: 15560) - 0.00% | 162.96 MB"
+2025-04-09 22:38:52,11.43,85.20,95.22,"
+Taskmgr.exe (PID: 8424) - 5.92% | 165.53 MB | 
+explorer.exe (PID: 11268) - 1.25% | 295.63 MB | 
+chrome.exe (PID: 3632) - 1.25% | 277.56 MB | 
+chrome.exe (PID: 2576) - 1.25% | 394.22 MB | 
+chrome.exe (PID: 5236) - 0.93% | 71.42 MB"
+2025-04-09 22:38:57,9.42,84.71,95.22,"
+Taskmgr.exe (PID: 8424) - 7.47% | 165.53 MB | 
+chrome.exe (PID: 10672) - 0.93% | 256.45 MB | 
+chrome.exe (PID: 2576) - 0.93% | 397.28 MB | 
+explorer.exe (PID: 11268) - 0.62% | 295.62 MB | 
+svchost.exe (PID: 12840) - 0.31% | 33.92 MB"
+2025-04-09 22:39:02,26.52,87.57,95.23,"
+Taskmgr.exe (PID: 8424) - 6.85% | 165.54 MB | 
+explorer.exe (PID: 11268) - 0.62% | 296.53 MB | 
+WindowsTerminal.exe (PID: 13056) - 0.31% | 83.61 MB | 
+chrome.exe (PID: 2576) - 0.31% | 391.79 MB | 
+Microsoft.SharePoint.exe (PID: 3624) - 0.00% | 14.30 MB"
+2025-04-09 22:39:07,45.96,89.21,95.31,"
+Taskmgr.exe (PID: 8424) - 3.74% | 165.90 MB | 
+chrome.exe (PID: 2576) - 3.74% | 393.20 MB | 
+chrome.exe (PID: 10672) - 1.56% | 323.50 MB | 
+TextInputHost.exe (PID: 8584) - 0.62% | 74.72 MB | 
+WindowsTerminal.exe (PID: 13056) - 0.62% | 83.96 MB"
+2025-04-09 22:39:12,63.81,84.68,95.22,"
+Taskmgr.exe (PID: 8424) - 9.35% | 165.93 MB | 
+explorer.exe (PID: 11268) - 4.98% | 296.81 MB | 
+chrome.exe (PID: 10672) - 1.87% | 342.79 MB | 
+WindowsTerminal.exe (PID: 13056) - 1.56% | 83.66 MB | 
+chrome.exe (PID: 2576) - 1.56% | 394.57 MB"
+2025-04-09 22:39:17,39.02,83.78,95.22,"
+Taskmgr.exe (PID: 8424) - 8.72% | 165.93 MB | 
+WindowsTerminal.exe (PID: 13056) - 1.25% | 83.70 MB | 
+nearby_share.exe (PID: 9156) - 0.62% | 10.40 MB | 
+Code.exe (PID: 12300) - 0.31% | 114.44 MB | 
+example.exe (PID: 8284) - 0.31% | 19.93 MB"
+2025-04-09 22:39:22,30.95,83.30,95.22,"
+Taskmgr.exe (PID: 8424) - 3.42% | 165.93 MB | 
+example.exe (PID: 8284) - 0.62% | 19.93 MB | 
+nearby_share.exe (PID: 9156) - 0.31% | 10.29 MB | 
+Code.exe (PID: 12300) - 0.31% | 114.46 MB | 
+chrome.exe (PID: 4048) - 0.31% | 54.28 MB"
+2025-04-09 22:39:27,37.25,84.10,95.22,"
+chrome.exe (PID: 10672) - 3.74% | 298.75 MB | 
+Taskmgr.exe (PID: 8424) - 3.42% | 165.92 MB | 
+explorer.exe (PID: 11268) - 2.80% | 295.88 MB | 
+notepad++.exe (PID: 14764) - 1.87% | 49.37 MB | 
+chrome.exe (PID: 3632) - 1.56% | 277.71 MB"
+2025-04-09 22:39:32,46.91,84.32,95.22,"
+chrome.exe (PID: 2576) - 35.85% | 396.22 MB | 
+Taskmgr.exe (PID: 8424) - 5.92% | 165.92 MB | 
+chrome.exe (PID: 10672) - 4.99% | 310.05 MB | 
+chrome.exe (PID: 3632) - 3.74% | 277.52 MB | 
+chrome.exe (PID: 5236) - 1.25% | 71.32 MB"
+2025-04-09 22:39:38,34.53,84.62,95.22,"
+example.exe (PID: 8284) - 6.81% | 23.54 MB | 
+Taskmgr.exe (PID: 8424) - 6.81% | 165.92 MB | 
+Code.exe (PID: 8624) - 3.81% | 117.27 MB | 
+Code.exe (PID: 12300) - 1.63% | 114.93 MB | 
+chrome.exe (PID: 3632) - 1.09% | 277.42 MB"
+2025-04-09 22:39:43,22.07,84.57,95.22,"
+chrome.exe (PID: 2576) - 21.08% | 411.18 MB | 
+Taskmgr.exe (PID: 8424) - 6.64% | 165.67 MB | 
+example.exe (PID: 8284) - 3.47% | 23.55 MB | 
+Code.exe (PID: 12300) - 2.02% | 114.27 MB | 
+chrome.exe (PID: 3632) - 1.73% | 277.43 MB"
+2025-04-09 22:39:49,40.04,85.45,95.22,"
+chrome.exe (PID: 2576) - 24.58% | 426.57 MB | 
+chrome.exe (PID: 10672) - 7.08% | 333.22 MB | 
+Taskmgr.exe (PID: 8424) - 5.65% | 165.67 MB | 
+chrome.exe (PID: 3632) - 5.38% | 277.91 MB | 
+chrome.exe (PID: 18932) - 3.95% | 55.16 MB"
+2025-04-09 22:39:54,34.72,85.72,95.22,"
+chrome.exe (PID: 2576) - 19.03% | 432.29 MB | 
+chrome.exe (PID: 3632) - 5.68% | 277.86 MB | 
+Taskmgr.exe (PID: 8424) - 5.11% | 165.60 MB | 
+chrome.exe (PID: 10672) - 4.26% | 347.29 MB | 
+chrome.exe (PID: 5236) - 3.69% | 71.79 MB"
+2025-04-09 22:40:00,33.68,86.03,95.22,"
+chrome.exe (PID: 2576) - 15.17% | 439.62 MB | 
+chrome.exe (PID: 10672) - 7.02% | 348.15 MB | 
+chrome.exe (PID: 3632) - 6.74% | 278.09 MB | 
+Taskmgr.exe (PID: 8424) - 5.90% | 165.60 MB | 
+example.exe (PID: 8284) - 4.78% | 23.50 MB"
+2025-04-09 22:40:05,32.92,86.99,95.22,"
+chrome.exe (PID: 3632) - 8.88% | 277.15 MB | 
+Taskmgr.exe (PID: 8424) - 6.02% | 165.65 MB | 
+example.exe (PID: 8284) - 5.44% | 23.50 MB | 
+chrome.exe (PID: 10672) - 4.01% | 369.18 MB | 
+explorer.exe (PID: 11268) - 3.44% | 296.76 MB"
+2025-04-09 22:40:11,13.18,85.84,95.22,"
+Taskmgr.exe (PID: 8424) - 6.03% | 165.65 MB | 
+example.exe (PID: 8284) - 4.60% | 23.49 MB | 
+Code.exe (PID: 8624) - 2.01% | 126.64 MB | 
+Code.exe (PID: 12300) - 1.44% | 115.04 MB | 
+chrome.exe (PID: 3632) - 1.44% | 276.99 MB"
+2025-04-09 22:40:16,13.40,85.64,95.22,"
+Taskmgr.exe (PID: 8424) - 5.48% | 165.65 MB | 
+example.exe (PID: 8284) - 3.46% | 23.49 MB | 
+Code.exe (PID: 8624) - 2.31% | 127.20 MB | 
+Code.exe (PID: 12300) - 1.73% | 115.62 MB | 
+WindowsTerminal.exe (PID: 13056) - 1.15% | 83.82 MB"
+2025-04-09 22:40:21,11.14,85.59,95.22,"
+Taskmgr.exe (PID: 8424) - 6.05% | 165.65 MB | 
+example.exe (PID: 8284) - 4.61% | 23.49 MB | 
+Code.exe (PID: 12300) - 1.44% | 116.24 MB | 
+Code.exe (PID: 8624) - 1.44% | 127.82 MB | 
+WindowsTerminal.exe (PID: 13056) - 0.86% | 83.57 MB"
+2025-04-09 22:40:27,18.10,85.63,95.22,"
+Taskmgr.exe (PID: 8424) - 8.36% | 165.95 MB | 
+example.exe (PID: 8284) - 4.61% | 23.49 MB | 
+WindowsTerminal.exe (PID: 13056) - 1.73% | 83.82 MB | 
+Code.exe (PID: 8624) - 1.73% | 128.25 MB | 
+Code.exe (PID: 12300) - 1.15% | 114.89 MB"
+2025-04-09 22:40:32,16.18,80.81,95.22,"
+Taskmgr.exe (PID: 8424) - 12.10% | 165.94 MB | 
+example.exe (PID: 8284) - 3.75% | 23.48 MB | 
+Code.exe (PID: 8624) - 1.73% | 128.74 MB | 
+Code.exe (PID: 12300) - 1.15% | 115.57 MB | 
+Code.exe (PID: 15464) - 1.15% | 325.09 MB"
+2025-04-09 22:40:38,16.56,80.76,95.22,"
+Taskmgr.exe (PID: 8424) - 9.80% | 165.92 MB | 
+example.exe (PID: 8284) - 3.46% | 23.91 MB | 
+Code.exe (PID: 12300) - 2.02% | 116.46 MB | 
+Code.exe (PID: 8624) - 1.44% | 129.47 MB | 
+explorer.exe (PID: 11268) - 1.15% | 295.86 MB"
+2025-04-09 22:40:43,14.38,80.51,95.22,"
+Taskmgr.exe (PID: 8424) - 8.04% | 165.97 MB | 
+example.exe (PID: 8284) - 3.73% | 23.66 MB | 
+Code.exe (PID: 12300) - 2.87% | 114.76 MB | 
+Code.exe (PID: 8624) - 2.58% | 129.32 MB | 
+Code.exe (PID: 15464) - 1.72% | 326.25 MB"
+2025-04-09 22:40:49,16.29,80.67,95.22,"
+Taskmgr.exe (PID: 8424) - 9.18% | 166.18 MB | 
+example.exe (PID: 8284) - 4.01% | 23.68 MB | 
+Code.exe (PID: 8624) - 2.01% | 129.93 MB | 
+Code.exe (PID: 12300) - 1.43% | 115.47 MB | 
+explorer.exe (PID: 11268) - 1.15% | 295.86 MB"
+2025-04-09 22:43:22,64.49,86.34,95.23,"
+RstMwService.exe (PID: 5484) - 0.00% | 8.36 MB | 
+chrome.exe (PID: 5460) - 0.00% | 14.86 MB | 
+svchost.exe (PID: 10364) - 0.00% | 6.65 MB | 
+RtkBtManServ.exe (PID: 5540) - 0.00% | 7.87 MB | 
+svchost.exe (PID: 3796) - 0.00% | 14.05 MB"
+2025-04-09 22:43:27,31.58,86.27,95.23,"
+chrome.exe (PID: 8356) - 28.35% | 417.82 MB | 
+chrome.exe (PID: 3632) - 15.89% | 302.23 MB | 
+Taskmgr.exe (PID: 8424) - 7.17% | 165.75 MB | 
+Code.exe (PID: 15464) - 1.56% | 329.92 MB | 
+Code.exe (PID: 12300) - 1.56% | 114.14 MB"
+2025-04-09 22:43:32,37.31,85.99,95.23,"
+chrome.exe (PID: 8356) - 38.32% | 417.82 MB | 
+Taskmgr.exe (PID: 8424) - 3.43% | 165.75 MB | 
+chrome.exe (PID: 7056) - 3.12% | 187.34 MB | 
+Code.exe (PID: 12300) - 2.18% | 114.13 MB | 
+Code.exe (PID: 15464) - 1.56% | 329.36 MB"
+2025-04-09 22:47:42,79.20,85.30,95.23,"
+example.exe (PID: 9464) - 200.00% | 20.09 MB | 
+OneApp.IGCC.WinService.exe (PID: 4828) - 0.00% | 13.35 MB | 
+csrss.exe (PID: 1600) - 0.00% | 7.74 MB | 
+UserOOBEBroker.exe (PID: 13376) - 0.00% | 10.13 MB | 
+chrome.exe (PID: 5460) - 0.00% | 14.84 MB"
+2025-04-09 22:53:00,20.62,84.16,95.23,"
+Code.exe (PID: 15464) - 13.97% | 335.26 MB | 
+Taskmgr.exe (PID: 8424) - 8.02% | 165.49 MB | 
+Code.exe (PID: 12300) - 4.75% | 112.71 MB | 
+explorer.exe (PID: 11268) - 1.78% | 339.72 MB | 
+example.exe (PID: 9464) - 1.49% | 23.92 MB"
+2025-04-09 22:53:48,55.45,84.44,95.23,"
+example.exe (PID: 12528) - 50.00% | 18.13 MB | 
+PowerToys.AlwaysOnTop.exe (PID: 8360) - 0.00% | 10.56 MB | 
+svchost.exe (PID: 1636) - 0.00% | 12.29 MB | 
+svchost.exe (PID: 8288) - 0.00% | 13.84 MB | 
+chrome.exe (PID: 14104) - 0.00% | 57.98 MB"
+2025-04-09 22:54:39,12.04,84.35,95.23,"
+Taskmgr.exe (PID: 8424) - 5.91% | 165.16 MB | 
+example.exe (PID: 12528) - 2.96% | 22.97 MB | 
+Code.exe (PID: 15464) - 2.37% | 337.04 MB | 
+Code.exe (PID: 12396) - 1.77% | 150.97 MB | 
+Code.exe (PID: 4344) - 1.19% | 144.58 MB"
+2025-04-09 22:57:10,49.57,84.55,95.24,"
+chrome.exe (PID: 11324) - 0.00% | 69.55 MB | 
+dasHost.exe (PID: 2808) - 0.00% | 5.11 MB | 
+svchost.exe (PID: 2384) - 0.00% | 14.02 MB | 
+svchost.exe (PID: 3300) - 0.00% | 10.04 MB | 
+chrome.exe (PID: 10672) - 0.00% | 264.02 MB"
+2025-04-09 22:58:01,11.44,83.01,95.24,"
+Taskmgr.exe (PID: 8424) - 5.37% | 156.70 MB | 
+example.exe (PID: 3860) - 2.69% | 22.53 MB | 
+Code.exe (PID: 15464) - 1.79% | 340.14 MB | 
+Code.exe (PID: 4344) - 1.19% | 144.93 MB | 
+chrome.exe (PID: 3632) - 0.30% | 288.83 MB"
+2025-04-09 22:58:53,10.92,82.96,95.24,"
+Taskmgr.exe (PID: 8424) - 5.98% | 156.70 MB | 
+example.exe (PID: 3860) - 2.99% | 23.05 MB | 
+Code.exe (PID: 15464) - 1.79% | 337.37 MB | 
+Code.exe (PID: 4344) - 0.60% | 145.16 MB | 
+Code.exe (PID: 12300) - 0.30% | 113.58 MB"

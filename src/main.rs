@@ -1,9 +1,54 @@
 use sysinfo::{System, SystemExt, CpuExt, DiskExt, ProcessExt};
-use std::{fs::{OpenOptions, create_dir_all}, io::Write, thread, time::Duration};
+use std::{
+    fs::{OpenOptions, create_dir_all},
+    io::Write,
+    thread,
+    time::Duration,
+};
 use chrono::Local;
+use plotters::prelude::*;
+
+// Estructura para almacenar las muestras de CPU
+struct CPUSample {
+    timestamp: String,
+    cpu_usage: f64,
+}
+
+fn generate_cpu_graph(samples: &[CPUSample]) {
+    let root_area = BitMapBackend::new("cpu_usage_graph.png", (640, 480)).into_drawing_area();
+    root_area.fill(&WHITE).unwrap();
+
+    let mut chart = ChartBuilder::on(&root_area)
+        .caption("Uso de CPU", ("sans-serif", 30))
+        .margin(10)
+        .x_label_area_size(40)
+        .y_label_area_size(40)
+        .build_cartesian_2d(0..samples.len() as u32, 0.0..100.0)
+        .unwrap();
+
+    chart
+        .configure_mesh()
+        .x_desc("Intervalos (x5s)")
+        .y_desc("CPU (%)")
+        .draw()
+        .unwrap();
+
+    chart
+        .draw_series(LineSeries::new(
+            samples
+                .iter()
+                .enumerate()
+                .map(|(i, s)| (i as u32, s.cpu_usage)),
+            &RED,
+        ))
+        .unwrap();
+
+    println!("✅ Gráfico actualizado: cpu_usage_graph.png");
+}
 
 fn main() {
     let mut sys = System::new_all();
+    let mut cpu_samples: Vec<CPUSample> = Vec::new();
 
     loop {
         sys.refresh_all();
@@ -13,14 +58,10 @@ fn main() {
         let disk_usage = sys
             .disks()
             .iter()
-            .map(|disk| disk.total_space() - disk.available_space())
+            .map(|d| d.total_space() - d.available_space())
             .sum::<u64>() as f32
             * 100.0
-            / sys
-                .disks()
-                .iter()
-                .map(|disk| disk.total_space())
-                .sum::<u64>() as f32;
+            / sys.disks().iter().map(|d| d.total_space()).sum::<u64>() as f32;
 
         let timestamp = Local::now().format("%Y-%m-%d %H:%M:%S").to_string();
 
@@ -31,7 +72,7 @@ fn main() {
         let top5 = processes.iter().take(5).map(|p| {
             format!(
                 "\n{} (PID: {}) - {:.2}% | {:.2} MB", 
-                p.name(), p.pid(), p.cpu_usage(), p.memory() as f64 / 1024.0 / 1024.0 // Convertir memoria en bytes a mega-bytes
+                p.name(), p.pid(), p.cpu_usage(), p.memory() as f64 / 1024.0 / 1024.0
             )
         }).collect::<Vec<String>>().join(" | ");
 
@@ -54,11 +95,25 @@ fn main() {
             .unwrap();
 
         if file.metadata().unwrap().len() == 0 {
-            writeln!(file, "timestamp,cpu,memory,disk,top5_processes").unwrap(); // encabezado
+            writeln!(file, "timestamp,cpu,memory,disk,top5_processes").unwrap();
         }
-            // Imprmir en pantalla el uso de recursos y procesos
+
         writeln!(file, "{},{:.2},{:.2},{:.2},\"{}\"", timestamp, cpu_usage, memory_usage, disk_usage, top5).unwrap();
 
-        thread::sleep(Duration::from_secs(5)); // Cada 5 Segundos
+        // Agregar muestra a la gráfica
+        cpu_samples.push(CPUSample {
+            timestamp: timestamp.clone(),
+            cpu_usage: cpu_usage as f64,
+        });
+
+        if cpu_samples.len() > 10 {
+            cpu_samples.remove(0); // mantener solo las últimas 10
+        }
+
+        if cpu_samples.len() == 10 {
+            generate_cpu_graph(&cpu_samples);
+        }
+
+        thread::sleep(Duration::from_secs(5));
     }
 }
