@@ -7,6 +7,7 @@ use std::{
 };
 use chrono::Local;
 use plotters::prelude::*;
+use windows::Win32::System::Console::GetConsoleWindow;
 
 // Estructura para almacenar las muestras de CPU
 struct CPUSample {
@@ -14,7 +15,16 @@ struct CPUSample {
     cpu_usage: f64,
 }
 
-fn generate_cpu_graph(samples: &[CPUSample]) {
+fn is_console_attached() -> bool {  // Función para saber si está la consola 
+    unsafe { GetConsoleWindow().0 != 0 }
+}
+
+pub fn generate_cpu_graph(samples: &[CPUSample]) {
+    if !is_console_attached() {
+        eprintln!("⚠️  Gráfico no generado hasta abrir una consola.");
+        return;
+    }
+
     let root_area = BitMapBackend::new("cpu_usage_graph.png", (640, 480)).into_drawing_area();
     root_area.fill(&WHITE).unwrap();
 
@@ -49,6 +59,7 @@ fn generate_cpu_graph(samples: &[CPUSample]) {
 fn main() {
     let mut sys = System::new_all();
     let mut cpu_samples: Vec<CPUSample> = Vec::new();
+    let mut iteration_count = 0;
 
     loop {
         sys.refresh_all();
@@ -83,22 +94,24 @@ fn main() {
             timestamp, cpu_usage, memory_usage, disk_usage, top5
         );
 
-        // Guardar CSV histórico
-        let date_str = Local::now().format("%Y-%m-%d").to_string();
-        let filename = format!("logs/metrics_{}.csv", date_str);
-        create_dir_all("logs").unwrap();
+        // Cada 5 minutos (60 ciclos de 5s) guarda en CSV
+        if iteration_count % 60 == 0 {
+            let date_str = Local::now().format("%Y-%m-%d").to_string();
+            let filename = format!("logs/metrics_{}.csv", date_str);
+            create_dir_all("logs").unwrap();
 
-        let mut file = OpenOptions::new()
-            .append(true)
-            .create(true)
-            .open(&filename)
-            .unwrap();
+            let mut file = OpenOptions::new()
+                .append(true)
+                .create(true)
+                .open(&filename)
+                .unwrap();
 
-        if file.metadata().unwrap().len() == 0 {
-            writeln!(file, "timestamp,cpu,memory,disk,top5_processes").unwrap();
+            if file.metadata().unwrap().len() == 0 {
+                writeln!(file, "timestamp,cpu,memory,disk,top5_processes").unwrap();
+            }
+
+            writeln!(file, "{},{:.2},{:.2},{:.2},\"{}\"", timestamp, cpu_usage, memory_usage, disk_usage, top5).unwrap();
         }
-
-        writeln!(file, "{},{:.2},{:.2},{:.2},\"{}\"", timestamp, cpu_usage, memory_usage, disk_usage, top5).unwrap();
 
         // Agregar muestra a la gráfica
         cpu_samples.push(CPUSample {
@@ -107,13 +120,14 @@ fn main() {
         });
 
         if cpu_samples.len() > 10 {
-            cpu_samples.remove(0); // mantener solo las últimas 10
+            cpu_samples.remove(0);
         }
 
         if cpu_samples.len() == 10 {
             generate_cpu_graph(&cpu_samples);
         }
 
+        iteration_count += 1;
         thread::sleep(Duration::from_secs(5));
     }
 }
