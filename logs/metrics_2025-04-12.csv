@@ -1,0 +1,133 @@
+timestamp,cpu,memory,disk,top5_processes
+2025-04-12 13:54:39,39.81,69.71,94.03,"
+svchost.exe (PID: 9416) - 0.00% | 11.98 MB | 
+vmcompute.exe (PID: 3612) - 0.00% | 10.56 MB | 
+svchost.exe (PID: 8700) - 0.00% | 8.75 MB | 
+svchost.exe (PID: 16796) - 0.00% | 5.58 MB | 
+svchost.exe (PID: 3500) - 0.00% | 19.86 MB"
+2025-04-12 14:36:18,52.58,87.51,94.65,"
+Visualizador-Metricas-Sistema.exe (PID: 12504) - 50.00% | 17.74 MB | 
+conhost.exe (PID: 12684) - 0.00% | 6.99 MB | 
+svchost.exe (PID: 1876) - 0.00% | 10.63 MB | 
+Idle (PID: 0) - 0.00% | 0.01 MB | 
+lsass.exe (PID: 1076) - 0.00% | 24.50 MB"
+2025-04-12 14:47:14,63.71,87.00,94.65,"
+Visualizador-Metricas-Sistema.exe (PID: 2236) - 100.00% | 17.36 MB | 
+svchost.exe (PID: 7980) - 0.00% | 18.56 MB | 
+RuntimeBroker.exe (PID: 13668) - 0.00% | 11.17 MB | 
+svchost.exe (PID: 2920) - 0.00% | 19.11 MB | 
+svchost.exe (PID: 3724) - 0.00% | 14.60 MB"
+2025-04-12 14:52:03,66.31,87.66,94.66,"
+Code.exe (PID: 16312) - 80.00% | 323.91 MB | 
+Visualizador-Metricas-Sistema.exe (PID: 3352) - 72.73% | 17.89 MB | 
+OfficeClickToRun.exe (PID: 4768) - 0.00% | 48.35 MB | 
+SystemSettings.exe (PID: 7420) - 0.00% | 5.27 MB | 
+chrome.exe (PID: 12024) - 0.00% | 232.97 MB"
+2025-04-12 14:55:21,53.93,87.41,94.66,"
+Visualizador-Metricas-Sistema.exe (PID: 6264) - 50.00% | 17.84 MB | 
+dllhost.exe (PID: 3640) - 0.00% | 7.50 MB | 
+MoNotificationUx.exe (PID: 16224) - 0.00% | 14.92 MB | 
+RuntimeBroker.exe (PID: 16528) - 0.00% | 7.38 MB | 
+python.exe (PID: 1520) - 0.00% | 48.39 MB"
+2025-04-12 14:59:41,53.27,88.30,94.66,"
+svchost.exe (PID: 9340) - 0.00% | 29.50 MB | 
+Code.exe (PID: 15952) - 0.00% | 263.58 MB | 
+svchost.exe (PID: 3092) - 0.00% | 7.41 MB | 
+igfxCUIServiceN.exe (PID: 2472) - 0.00% | 10.90 MB | 
+powershell.exe (PID: 8484) - 0.00% | 70.41 MB"
+2025-04-12 15:00:56,53.65,87.92,94.66,"
+Code.exe (PID: 16060) - 0.00% | 49.22 MB | 
+svchost.exe (PID: 1596) - 0.00% | 11.44 MB | 
+svchost.exe (PID: 9340) - 0.00% | 29.50 MB | 
+nearby_share.exe (PID: 15420) - 0.00% | 18.89 MB | 
+gamingservices.exe (PID: 7324) - 0.00% | 32.11 MB"
+2025-04-12 15:02:23,52.82,87.95,94.66,"
+svchost.exe (PID: 1092) - 0.00% | 18.21 MB | 
+svchost.exe (PID: 1576) - 0.00% | 11.54 MB | 
+vmms.exe (PID: 3032) - 0.00% | 31.03 MB | 
+pet.exe (PID: 10524) - 0.00% | 6.59 MB | 
+svchost.exe (PID: 2020) - 0.00% | 10.41 MB"
+2025-04-12 15:07:33,37.71,89.18,94.66,"
+explorer.exe (PID: 16064) - 34.74% | 275.62 MB | 
+msedgewebview2.exe (PID: 3580) - 1.51% | 24.95 MB | 
+msedgewebview2.exe (PID: 13072) - 1.21% | 255.10 MB | 
+Taskmgr.exe (PID: 14324) - 0.91% | 152.66 MB | 
+TranslucentTB.exe (PID: 12296) - 0.30% | 47.05 MB"
+2025-04-12 15:12:45,27.17,90.44,94.66,"
+Code.exe (PID: 16312) - 9.34% | 336.14 MB | 
+Code.exe (PID: 8644) - 2.41% | 185.75 MB | 
+Code.exe (PID: 5276) - 2.11% | 132.92 MB | 
+Taskmgr.exe (PID: 14324) - 1.81% | 144.10 MB | 
+msedgewebview2.exe (PID: 3580) - 1.50% | 24.94 MB"
+2025-04-12 15:17:56,35.94,82.83,94.66,"
+Code.exe (PID: 16312) - 22.05% | 337.38 MB | 
+Code.exe (PID: 8644) - 5.44% | 218.30 MB | 
+Code.exe (PID: 5276) - 4.53% | 132.30 MB | 
+Taskmgr.exe (PID: 14324) - 2.42% | 134.12 MB | 
+Visualizador-Metricas-Sistema.exe (PID: 16048) - 0.91% | 22.86 MB"
+2025-04-12 15:23:07,14.41,81.73,94.66,"
+Taskmgr.exe (PID: 14324) - 1.51% | 133.23 MB | 
+Visualizador-Metricas-Sistema.exe (PID: 16048) - 1.51% | 22.70 MB | 
+msedgewebview2.exe (PID: 13072) - 0.60% | 187.23 MB | 
+msedgewebview2.exe (PID: 3580) - 0.60% | 24.09 MB | 
+Code.exe (PID: 16312) - 0.60% | 319.09 MB"
+2025-04-12 15:28:19,28.88,83.86,94.66,"
+Code.exe (PID: 16312) - 6.91% | 340.96 MB | 
+Code.exe (PID: 5276) - 3.00% | 137.78 MB | 
+Taskmgr.exe (PID: 14324) - 2.10% | 127.71 MB | 
+Code.exe (PID: 8644) - 2.10% | 221.62 MB | 
+chrome.exe (PID: 4960) - 0.60% | 239.98 MB"
+2025-04-12 15:33:29,13.52,81.26,94.66,"
+Taskmgr.exe (PID: 14324) - 1.21% | 127.77 MB | 
+Visualizador-Metricas-Sistema.exe (PID: 16048) - 1.21% | 22.69 MB | 
+msedgewebview2.exe (PID: 13072) - 0.30% | 182.81 MB | 
+Code.exe (PID: 16312) - 0.30% | 336.20 MB | 
+Code.exe (PID: 15172) - 0.30% | 103.43 MB"
+2025-04-12 15:38:42,14.30,79.88,94.67,"
+Taskmgr.exe (PID: 14324) - 1.81% | 124.49 MB | 
+chrome.exe (PID: 12888) - 0.60% | 294.95 MB | 
+chrome.exe (PID: 4960) - 0.60% | 229.27 MB | 
+Visualizador-Metricas-Sistema.exe (PID: 16048) - 0.60% | 22.70 MB | 
+chrome.exe (PID: 12024) - 0.30% | 221.48 MB"
+2025-04-12 15:40:49,75.70,79.49,94.67,"
+Visualizador-Metricas-Sistema.exe (PID: 2296) - 72.73% | 18.09 MB | 
+Code.exe (PID: 5276) - 44.44% | 138.29 MB | 
+chrome.exe (PID: 10604) - 0.00% | 28.19 MB | 
+Code.exe (PID: 5836) - 0.00% | 521.64 MB | 
+chrome.exe (PID: 224) - 0.00% | 20.01 MB"
+2025-04-12 15:41:39,84.75,81.39,94.67,"
+Code.exe (PID: 16312) - 50.00% | 340.90 MB | 
+Taskmgr.exe (PID: 14324) - 33.33% | 124.57 MB | 
+RuntimeBroker.exe (PID: 13668) - 0.00% | 10.87 MB | 
+msedgewebview2.exe (PID: 3024) - 0.00% | 17.07 MB | 
+mysqld.exe (PID: 6504) - 0.00% | 23.65 MB"
+2025-04-12 15:43:02,84.01,81.90,94.67,"
+Visualizador-Metricas-Sistema.exe (PID: 15988) - 50.00% | 17.36 MB | 
+svchost.exe (PID: 1596) - 0.00% | 11.53 MB | 
+svchost.exe (PID: 1808) - 0.00% | 10.47 MB | 
+svchost.exe (PID: 4820) - 0.00% | 39.98 MB | 
+svchost.exe (PID: 1092) - 0.00% | 16.68 MB"
+2025-04-12 15:46:06,57.41,81.76,94.67,"
+msedgewebview2.exe (PID: 3024) - 0.00% | 17.07 MB | 
+svchost.exe (PID: 3092) - 0.00% | 7.58 MB | 
+nssm.exe (PID: 5688) - 0.00% | 6.33 MB | 
+explorer.exe (PID: 16064) - 0.00% | 303.95 MB | 
+SearchIndexer.exe (PID: 10996) - 0.00% | 30.90 MB"
+2025-04-12 15:51:21,51.91,82.12,94.66,"
+msedgewebview2.exe (PID: 12208) - 13.29% | 347.82 MB | 
+msedgewebview2.exe (PID: 13072) - 8.78% | 266.73 MB | 
+Code.exe (PID: 5276) - 8.17% | 138.76 MB | 
+Taskmgr.exe (PID: 14324) - 5.45% | 126.81 MB | 
+Code.exe (PID: 16312) - 4.84% | 355.32 MB"
+2025-04-12 15:56:35,51.91,81.39,94.67,"
+msedgewebview2.exe (PID: 12208) - 14.14% | 330.24 MB | 
+msedgewebview2.exe (PID: 13072) - 6.92% | 264.45 MB | 
+Code.exe (PID: 5276) - 6.32% | 138.98 MB | 
+Code.exe (PID: 16312) - 5.41% | 361.69 MB | 
+msedgewebview2.exe (PID: 3580) - 2.71% | 24.04 MB"
+2025-04-12 16:01:55,38.57,86.24,94.68,"
+msedgewebview2.exe (PID: 13072) - 14.93% | 707.90 MB | 
+Clipchamp.exe (PID: 13512) - 6.27% | 161.09 MB | 
+msedgewebview2.exe (PID: 12208) - 5.37% | 409.57 MB | 
+msedgewebview2.exe (PID: 15412) - 2.39% | 159.76 MB | 
+Taskmgr.exe (PID: 14324) - 1.49% | 126.84 MB"

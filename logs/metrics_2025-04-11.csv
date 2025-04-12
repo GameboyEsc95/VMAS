@@ -1,0 +1,109 @@
+timestamp,cpu,memory,disk,top5_processes
+2025-04-11 09:24:43,10.14,64.23,93.98,"
+chrome.exe (PID: 11548) - 5.89% | 136.77 MB | 
+chrome.exe (PID: 8764) - 4.65% | 229.64 MB | 
+chrome.exe (PID: 8424) - 2.17% | 335.70 MB | 
+chrome.exe (PID: 13812) - 1.24% | 334.28 MB | 
+System (PID: 4) - 0.93% | 4.30 MB"
+2025-04-11 09:29:45,19.18,71.85,93.97,"
+chrome.exe (PID: 8424) - 13.98% | 453.92 MB | 
+chrome.exe (PID: 8684) - 11.18% | 180.02 MB | 
+System (PID: 4) - 5.28% | 4.34 MB | 
+dwm.exe (PID: 13664) - 3.73% | 106.48 MB | 
+chrome.exe (PID: 8764) - 3.42% | 258.48 MB"
+2025-04-11 09:34:46,28.34,87.05,93.98,"
+chrome.exe (PID: 8424) - 12.15% | 691.89 MB | 
+chrome.exe (PID: 8764) - 9.35% | 339.38 MB | 
+chrome.exe (PID: 2296) - 7.79% | 140.81 MB | 
+MsMpEng.exe (PID: 5724) - 3.74% | 330.32 MB | 
+System (PID: 4) - 3.12% | 4.35 MB"
+2025-04-11 09:39:48,42.77,90.52,93.98,"
+chrome.exe (PID: 1536) - 32.71% | 579.22 MB | 
+chrome.exe (PID: 8424) - 21.79% | 710.35 MB | 
+chrome.exe (PID: 3308) - 7.47% | 74.54 MB | 
+chrome.exe (PID: 8764) - 5.60% | 325.85 MB | 
+chrome.exe (PID: 11548) - 3.11% | 171.77 MB"
+2025-04-11 09:44:50,35.16,93.29,93.98,"
+chrome.exe (PID: 8764) - 14.30% | 326.53 MB | 
+chrome.exe (PID: 8424) - 9.01% | 830.14 MB | 
+MsMpEng.exe (PID: 5724) - 4.66% | 301.07 MB | 
+chrome.exe (PID: 3308) - 4.66% | 73.56 MB | 
+dwm.exe (PID: 13664) - 3.42% | 90.61 MB"
+2025-04-11 09:49:51,2.74,90.29,94.00,"
+chrome.exe (PID: 8764) - 1.25% | 322.07 MB | 
+System (PID: 4) - 0.62% | 4.36 MB | 
+MsMpEng.exe (PID: 5724) - 0.31% | 263.37 MB | 
+chrome.exe (PID: 9500) - 0.31% | 146.00 MB | 
+chrome.exe (PID: 3308) - 0.31% | 71.53 MB"
+2025-04-11 09:54:53,2.64,86.87,94.11,"
+MsMpEng.exe (PID: 5724) - 0.62% | 254.43 MB | 
+chrome.exe (PID: 14860) - 0.62% | 171.98 MB | 
+svchost.exe (PID: 2672) - 0.31% | 9.95 MB | 
+chrome.exe (PID: 8764) - 0.31% | 316.05 MB | 
+chrome.exe (PID: 6156) - 0.31% | 137.53 MB"
+2025-04-11 09:59:54,2.69,84.26,94.11,"
+chrome.exe (PID: 8764) - 0.62% | 315.32 MB | 
+System (PID: 4) - 0.31% | 4.40 MB | 
+svchost.exe (PID: 3804) - 0.31% | 10.22 MB | 
+MsMpEng.exe (PID: 5724) - 0.31% | 255.39 MB | 
+svchost.exe (PID: 1876) - 0.31% | 8.05 MB"
+2025-04-11 12:16:46,11.63,60.15,93.92,"
+SumatraPDF.exe (PID: 9536) - 7.16% | 105.77 MB | 
+System (PID: 4) - 1.87% | 4.41 MB | 
+dwm.exe (PID: 13664) - 1.87% | 126.58 MB | 
+csrss.exe (PID: 10440) - 0.93% | 6.84 MB | 
+svchost.exe (PID: 3804) - 0.31% | 10.83 MB"
+2025-04-11 12:21:47,52.35,65.17,93.93,"
+chrome.exe (PID: 4960) - 32.30% | 268.11 MB | 
+chrome.exe (PID: 13348) - 25.78% | 171.34 MB | 
+chrome.exe (PID: 4884) - 15.84% | 432.95 MB | 
+chrome.exe (PID: 10872) - 7.76% | 137.66 MB | 
+chrome.exe (PID: 10612) - 7.14% | 61.51 MB"
+2025-04-11 12:26:49,13.33,65.57,93.92,"
+chrome.exe (PID: 6812) - 4.35% | 360.38 MB | 
+chrome.exe (PID: 4960) - 2.80% | 281.97 MB | 
+chrome.exe (PID: 4884) - 2.49% | 448.05 MB | 
+System (PID: 4) - 2.18% | 4.51 MB | 
+dwm.exe (PID: 13664) - 1.56% | 132.28 MB"
+2025-04-11 12:31:50,7.75,59.92,93.92,"
+chrome.exe (PID: 4884) - 5.61% | 433.33 MB | 
+dwm.exe (PID: 13664) - 2.18% | 120.73 MB | 
+chrome.exe (PID: 12312) - 1.25% | 314.16 MB | 
+MsMpEng.exe (PID: 5724) - 0.62% | 190.27 MB | 
+chrome.exe (PID: 4960) - 0.62% | 281.90 MB"
+2025-04-11 12:36:52,17.60,61.11,93.92,"
+chrome.exe (PID: 12312) - 17.09% | 337.61 MB | 
+chrome.exe (PID: 4960) - 4.04% | 281.77 MB | 
+chrome.exe (PID: 4884) - 1.86% | 477.65 MB | 
+System (PID: 4) - 1.55% | 4.51 MB | 
+dwm.exe (PID: 13664) - 0.93% | 119.89 MB"
+2025-04-11 12:41:53,3.01,60.26,93.92,"
+System (PID: 4) - 0.62% | 4.51 MB | 
+Visualizador-Metricas-Sistema.exe (PID: 5384) - 0.62% | 19.24 MB | 
+chrome.exe (PID: 10612) - 0.31% | 63.88 MB | 
+MsMpEng.exe (PID: 5724) - 0.31% | 188.50 MB | 
+chrome.exe (PID: 3744) - 0.31% | 48.14 MB"
+2025-04-11 12:46:55,12.26,62.14,93.93,"
+chrome.exe (PID: 12312) - 4.98% | 368.54 MB | 
+chrome.exe (PID: 4884) - 4.36% | 393.20 MB | 
+chrome.exe (PID: 4960) - 3.74% | 281.13 MB | 
+System (PID: 4) - 2.18% | 4.52 MB | 
+dwm.exe (PID: 13664) - 1.87% | 121.59 MB"
+2025-04-11 12:51:56,6.85,62.18,93.92,"
+System (PID: 4) - 0.62% | 4.52 MB | 
+chrome.exe (PID: 12312) - 0.62% | 367.41 MB | 
+chrome.exe (PID: 4884) - 0.62% | 394.02 MB | 
+chrome.exe (PID: 10612) - 0.31% | 64.68 MB | 
+MsMpEng.exe (PID: 5724) - 0.31% | 189.06 MB"
+2025-04-11 12:56:57,19.85,63.83,93.92,"
+chrome.exe (PID: 12312) - 11.52% | 359.08 MB | 
+chrome.exe (PID: 4884) - 10.89% | 519.80 MB | 
+chrome.exe (PID: 6812) - 6.54% | 243.20 MB | 
+chrome.exe (PID: 4960) - 4.05% | 283.24 MB | 
+System (PID: 4) - 1.56% | 4.52 MB"
+2025-04-11 13:01:59,15.58,77.88,93.93,"
+MsMpEng.exe (PID: 5724) - 9.94% | 210.91 MB | 
+Code.exe (PID: 9296) - 3.42% | 259.84 MB | 
+chrome.exe (PID: 4960) - 2.80% | 285.70 MB | 
+System (PID: 4) - 2.48% | 4.53 MB | 
+chrome.exe (PID: 2384) - 2.48% | 216.12 MB"

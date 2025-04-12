@@ -1,13 +1,17 @@
-use sysinfo::{System, SystemExt, CpuExt, DiskExt, ProcessExt};
+use sysinfo::{System, SystemExt, CpuExt, DiskExt, ProcessExt}; // Métricas del sistema
 use std::{
-    fs::{OpenOptions, create_dir_all},
+    fs::{OpenOptions, create_dir_all}, // Operaciones de archivos, hilos, y tiempo
     io::Write,
     thread,
-    time::Duration,
+    time::Duration, //Librerías para reportes
+    process::Command,
+    path::PathBuf,
 };
-use chrono::Local;
-use plotters::prelude::*;
-use windows::Win32::System::Console::GetConsoleWindow;
+use chrono::{Local, Datelike, Timelike}; // Fecha y hora actuales
+use plotters::prelude::*; // Crear y guardar gráficas
+use windows::Win32::System::Console::GetConsoleWindow; // Interactuar con la consola
+
+
 
 // Estructura para almacenar las muestras de CPU
 struct CPUSample {
@@ -21,7 +25,7 @@ fn is_console_attached() -> bool {  // Función para saber si está la consola
 
 pub fn generate_cpu_graph(samples: &[CPUSample]) {
     if !is_console_attached() {
-        eprintln!("⚠️  Gráfico no generado hasta abrir una consola.");
+        eprintln!("¡Gráfico no generado hasta abrir una consola!");
         return;
     }
 
@@ -57,12 +61,21 @@ pub fn generate_cpu_graph(samples: &[CPUSample]) {
 }
 
 fn main() {
+
     let mut sys = System::new_all();
     let mut cpu_samples: Vec<CPUSample> = Vec::new();
     let mut iteration_count = 0;
+    let mut ultimo_dia = 0;
 
     loop {
         sys.refresh_all();
+
+        let now = Local::now();
+        let dia_actual = now.day();
+        if dia_actual % 2 == 0 && dia_actual != ultimo_dia && now.minute() >= 1 {
+            generar_reportes();  
+            ultimo_dia = dia_actual;
+        } // Generación de reportes en días pares
 
         let cpu_usage = sys.global_cpu_info().cpu_usage();
         let memory_usage = sys.used_memory() as f32 * 100.0 / sys.total_memory() as f32;
@@ -129,5 +142,51 @@ fn main() {
 
         iteration_count += 1;
         thread::sleep(Duration::from_secs(5));
+    }
+}
+
+fn generar_reportes() {
+    let mut entries = fs::read_dir(r#".\logs\"#) // Acceder a la carpeta \logs y extraer el csv
+        .unwrap()
+        .filter_map(Result::ok)
+        .filter(|e| e.path().extension().map(|ext| ext == "csv").unwrap_or(false))
+        .collect::<Vec<_>>();
+
+    entries.sort_by_key(|e| e.path().clone());
+    entries.reverse();  // Obtener el más reciente primero
+
+    let recientes: Vec<PathBuf> = entries.into_iter()
+        .take(2)  // Los dos últimos
+        .map(|e| e.path())
+        .collect();
+
+    if recientes.is_empty() {
+        println!("! No se encontraron archivos CSV.");
+        return;
+    }
+
+    println!("Generando reportes PDF para:");
+    for archivo in &recientes {
+        println!("- {}", archivo.display());
+    }
+
+    let mut command = Command::new("python");
+    command.arg("scripts\\reports.py");  // Tu script Python
+
+    for archivo in &recientes {
+        command.arg(archivo.to_string_lossy().to_string());
+    }
+
+    match command.output() {
+        Ok(output) => {
+            if output.status.success() {
+                println!("✅ Reporte generado con éxito!");
+                println!("{}", String::from_utf8_lossy(&output.stdout));
+            } else {
+                eprintln!("❗Error al ejecutar el script Python:");
+                eprintln!("{}", String::from_utf8_lossy(&output.stderr));
+            }
+        }
+        Err(e) => eprintln!("❗ Error al intentar lanzar Python: {}", e),
     }
 }
